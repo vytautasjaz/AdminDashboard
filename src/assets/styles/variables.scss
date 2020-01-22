@@ -1,0 +1,35 @@
+$background: #ebebeb;
+$nav_width: 260px;
+$nav_height: 8vh;
+
+%content__container {
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@mixin usercolor($color) {
+    display: flex;
+    flex-direction: column;
+    color: #565f6f;
+    h4 {
+        margin: 0;
+    }
+    span {
+        padding: 2px 0;
+        font-size: 14px;;
+        margin: 0;
+    }
+    h5 {
+        margin: 0;
+        color: $color;
+    }
+}
+
+%container_h5 {
+    font-size: 12px;
+    margin: 0;
+    color: #797979;
+}

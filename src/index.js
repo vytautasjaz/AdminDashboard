@@ -18,3 +18,7 @@
  import './assets/images/icons/local_post_office-24px.svg';
  import './assets/images/icons/ballot-24px.svg';
  import './assets/images/icons/card_giftcard-24px.svg';
+ import './assets/images/green.jpg';
+ import './assets/images/blue.jpg';
+ import './assets/images/red.jpg';
+ import './assets/images/purple.jpg';
