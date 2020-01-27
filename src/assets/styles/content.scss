@@ -143,9 +143,13 @@
 
 footer {
     margin-top: 30px;
-    width: 100%;
-    height: 40px;
+    margin-left: $nav_width;
+    padding-left: 20px;
+    max-width: 1200px;
+    height: 50px;
     background-color: #fafafa;
+    display: flex;
+    align-items: center;
         span {
             font-size: 12px;
             color:  #565f6f;
