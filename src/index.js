@@ -1,4 +1,5 @@
  import './assets/styles/app.scss';
+ import './index.hbs';
 
  import './assets/images/fingerprint-24px.svg';
  import './assets/images/menu-24px.svg';
