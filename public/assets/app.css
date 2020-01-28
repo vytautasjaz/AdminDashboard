@@ -142,13 +142,13 @@ input[type="text"] {
         color: #1c83fe; }
   .content__row1 {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline; }
+    flex-wrap: wrap; }
     .content__row1__container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 25%;
+      flex: 1;
+      min-width: 200px;
       height: 60px; }
       .content__row1__container img {
         width: 50px;
@@ -165,35 +165,41 @@ input[type="text"] {
           font-size: 12px; }
   .content__row2 {
     display: flex;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
     .content__row2__container {
-      width: 33%;
+      display: flex;
+      flex: 1;
+      min-width: 200px;
       height: 250px; }
   .content__row3 {
     display: flex;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
     .content__row3__left {
-      width: 67%; }
-      .content__row3__left__container span {
-        font-size: 13px;
-        margin: 0;
-        color: #797979; }
-      .content__row3__left__container table {
-        margin-top: 15px;
-        border: 0px;
-        border-collapse: collapse;
-        width: 100%;
-        color: #565f6f;
-        font-size: 13px;
-        text-align: left; }
-        .content__row3__left__container table thead {
-          border-bottom: 1px solid #565f6f; }
-          .content__row3__left__container table thead th {
+      flex: 1;
+      min-width: 67%; }
+      .content__row3__left__container {
+        overflow-x: auto; }
+        .content__row3__left__container span {
+          font-size: 13px;
+          margin: 0;
+          color: #797979; }
+        .content__row3__left__container table {
+          margin-top: 15px;
+          border: 0px;
+          border-collapse: collapse;
+          width: 100%;
+          color: #565f6f;
+          font-size: 13px;
+          text-align: left; }
+          .content__row3__left__container table thead {
+            border-bottom: 1px solid #565f6f; }
+            .content__row3__left__container table thead th {
+              padding: 10px; }
+          .content__row3__left__container table td {
             padding: 10px; }
-        .content__row3__left__container table td {
-          padding: 10px; }
     .content__row3__right {
-      width: 33%; }
+      flex: 1;
+      min-width: 200px; }
       .content__row3__right__container {
         display: flex;
         align-items: center;
@@ -261,7 +267,8 @@ footer {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px; }
+  width: 7px;
+  height: 7px; }
 
 /* Track */
 ::-webkit-scrollbar-track {

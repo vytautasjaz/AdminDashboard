@@ -33,13 +33,13 @@
         }
         &__row1 {
             display: flex;
-            justify-content: space-between;
-            align-items: baseline;
+            flex-wrap: wrap;
             &__container {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 25%;
+                flex: 1;
+                min-width: 200px;
                 height: 60px;
                 @extend %content__container;
                     img {
@@ -63,9 +63,11 @@
         }
             &__row2 {
                 display: flex;
-                justify-content: space-between;
-                    &__container{
-                        width: 33%;
+                flex-wrap: wrap;
+                &__container{
+                        display: flex;
+                        flex: 1;
+                        min-width: 200px;
                         height: 250px;
                         @extend %content__container;
                             h5{
@@ -76,11 +78,13 @@
             }
             &__row3 {
                 display: flex;
-                justify-content: space-between;
+                flex-wrap: wrap;
                     &__left {
-                        width: 67%;
+                        flex: 1;
+                        min-width: 67%;
                             &__container {
                                @extend %content__container;
+                               overflow-x:auto;
                                 h5 {
                                     @extend %container_h5;
                                 }
@@ -111,7 +115,8 @@
                             }
                     }
                     &__right {
-                        width: 33%;
+                        flex: 1;
+                        min-width: 200px;
                         &__container {
                             display: flex;
                             align-items: center ;

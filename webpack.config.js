@@ -39,7 +39,7 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'index',
+      title: 'Admin Dashboard',
       filename: 'index.html',
       template: './src/index.hbs'
     }),
