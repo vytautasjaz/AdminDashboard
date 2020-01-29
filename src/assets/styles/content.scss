@@ -1,10 +1,10 @@
 .content {
     margin-top: 8vh;
     margin-left: $nav_width;
-    max-width: 1800px;
+    max-width: 2000px;
     z-index: 999;
     padding:10px;
-        &__nav {
+            &__nav {
             margin: 5px;
             padding: 5px;
             color: #565f6f;
@@ -74,14 +74,14 @@
                                 @extend %container_h5;
                             }
                     }
-            
+        
             }
             &__row3 {
                 display: flex;
                 flex-wrap: wrap;
                     &__left {
-                        flex: 1;
-                        min-width: 67%;
+                        flex: 2;
+                        max-width: 100%;
                             &__container {
                                @extend %content__container;
                                overflow-x:auto;
@@ -110,7 +110,6 @@
                                         td {
                                             padding: 10px;
                                         }
-
                                 }
                             }
                     }
@@ -144,13 +143,16 @@
                          
                     }
             }
+&.nav--small {
+    margin-left: $nav_width_small;
+}
 }
 
 footer {
     margin-top: 30px;
     margin-left: $nav_width;
     padding-left: 20px;
-    max-width: 1800px;
+    max-width: 2000px;
     height: 50px;
     background-color: #fafafa;
     display: flex;
@@ -159,4 +161,7 @@ footer {
             font-size: 12px;
             color:  #565f6f;
         }
+&.nav--small {
+    margin-left: $nav_width_small;
+}
 }

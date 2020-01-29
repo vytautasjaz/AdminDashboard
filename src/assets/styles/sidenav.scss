@@ -46,4 +46,17 @@
         a:hover{
             color: #666666;
         }
+&.nav--small {
+    width: $nav_width_small;
+    overflow-x: hidden;
+    span {
+        display: none;
+    }
+    a {
+        &:after {
+            display: none;
+        }
+    }
 }
+}
+

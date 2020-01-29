@@ -21,15 +21,16 @@
   display: flex;
   align-items: center;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25); }
-  .nav__left a {
-    width: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .nav__left h1 {
-    color: white;
-    margin: 0;
-    padding: 10px; }
+  .nav__left {
+    width: 260px; }
+    .nav__left a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .nav__left h1 {
+      color: white;
+      margin: 0;
+      padding: 10px; }
   .nav__right {
     width: 100%;
     height: 100%;
@@ -60,6 +61,10 @@
     height: 20px;
     width: 20px;
     padding: 10px; }
+  .nav.nav--small .nav__left {
+    width: 70px; }
+  .nav.nav--small h1 {
+    display: none; }
 
 input[type="text"] {
   color: white;
@@ -112,11 +117,18 @@ input[type="text"] {
       position: absolute; }
   .sidenav a:hover {
     color: #666666; }
+  .sidenav.nav--small {
+    width: 70px;
+    overflow-x: hidden; }
+    .sidenav.nav--small span {
+      display: none; }
+    .sidenav.nav--small a:after {
+      display: none; }
 
 .content {
   margin-top: 8vh;
   margin-left: 260px;
-  max-width: 1800px;
+  max-width: 2000px;
   z-index: 999;
   padding: 10px; }
   .content__nav {
@@ -175,8 +187,8 @@ input[type="text"] {
     display: flex;
     flex-wrap: wrap; }
     .content__row3__left {
-      flex: 1;
-      min-width: 67%; }
+      flex: 2;
+      max-width: 100%; }
       .content__row3__left__container {
         overflow-x: auto; }
         .content__row3__left__container span {
@@ -251,12 +263,14 @@ input[type="text"] {
           .content__row3__right__container__user h5 {
             margin: 0;
             color: #84ca8c; }
+  .content.nav--small {
+    margin-left: 70px; }
 
 footer {
   margin-top: 30px;
   margin-left: 260px;
   padding-left: 20px;
-  max-width: 1800px;
+  max-width: 2000px;
   height: 50px;
   background-color: #fafafa;
   display: flex;
@@ -264,6 +278,8 @@ footer {
   footer span {
     font-size: 12px;
     color: #565f6f; }
+  footer.nav--small {
+    margin-left: 70px; }
 
 /* width */
 ::-webkit-scrollbar {

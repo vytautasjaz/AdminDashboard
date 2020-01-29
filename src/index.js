@@ -23,3 +23,12 @@
  import './assets/images/blue.jpg';
  import './assets/images/red.jpg';
  import './assets/images/purple.jpg';
+
+console.log(document.querySelector('[data-toggle]'));
+document.querySelector('[data-toggle]').addEventListener('click',function(event){
+    console.log(event.target.dataset.toggle);
+    document.querySelectorAll('[data-sidenav]').forEach(function(el) {
+        console.log(el);
+        el.classList.toggle('nav--small');
+    });
+});
